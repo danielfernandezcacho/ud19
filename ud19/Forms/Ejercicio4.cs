@@ -140,14 +140,14 @@ namespace ud19
             tempResult2 = Double.Parse(firstString);
 
             CalculateResult();
-
-            if (tempResult2 != 0)
-            {
-                textBox1.Text = result.ToString();
-            }
-            else
+         
+           if (tempResult2 == 0 && operacion == "/")
             {
                 textBox1.Text = "Math ERROR";
+            }
+           else
+            {
+                textBox1.Text = result.ToString();
             }
         }
 

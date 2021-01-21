@@ -16,7 +16,7 @@ namespace ud19
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Ejercicio4());
+            Application.Run(new Seleccion());
         }
     }
 }
