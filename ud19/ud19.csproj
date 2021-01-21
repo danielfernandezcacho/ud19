@@ -46,6 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ej1\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ej1\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
     <Compile Include="Forms\Ejercicio2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +68,12 @@
     </Compile>
     <Compile Include="Forms\Seleccion.Designer.cs">
       <DependentUpon>Seleccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ej3\ej3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ej3\ej3.Designer.cs">
+      <DependentUpon>ej3.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -84,6 +95,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Seleccion_de_ejercicios.resx">
+      <DependentUpon>Seleccion_de_ejercicios.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
