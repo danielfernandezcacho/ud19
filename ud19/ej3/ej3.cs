@@ -8,10 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ud19.ej3
+namespace ud19
 {
     public partial class ej3 : Form
     {
+        string so = "";
+        string espe = "";
+        string msgSo = "";
+        int horas;
         public ej3()
         {
             InitializeComponent();
@@ -47,9 +51,57 @@ namespace ud19.ej3
 
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+            if (radioButton1.Checked)
+            {
+                so = radioButton1.Text;
+            
+            }
+            
+            else if (radioButton2.Checked)
+            {
+                so = radioButton2.Text;
+            }
+            
+            else if(radioButton3.Checked)
+            {
+                so = radioButton3.Text;
+            }
+
+           
+           
+
+            if (checkBox1.Checked)
+            {
+                espe += checkBox1.Text;
+            }
+
+            if (checkBox2.Checked)
+            {
+                espe += checkBox2.Text;
+            }
+
+            if (checkBox3.Checked)
+            {
+                espe += checkBox3.Text;
+            }
+
+
+            MessageBox.Show("El sistema operativo elegiso es "+so+ " \nLa especialidad escogida es " + espe + " \nhoras " + trackBar1.Value.ToString());
+        }
+
+        private void ej3_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void trackBar1_Scroll(object sender, EventArgs e)
+        {
+            label4.Text = "horas:"+ trackBar1.Value.ToString();
         }
     }
 }
