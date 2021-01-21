@@ -51,6 +51,7 @@
     </Compile>
     <Compile Include="ej1\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+	</Compile>
     <Compile Include="Forms\Ejercicio2.cs">
       <SubType>Form</SubType>
     </Compile>

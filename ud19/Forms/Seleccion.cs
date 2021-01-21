@@ -22,14 +22,16 @@ namespace ud19
         {
             MessageBox.Show("¿Estás seguro? No te conviene entrar aquí...");
 
-            
-           // Application.Run(new Form1());
+            Form1 ejercicio1 = new Form1();
+            ejercicio1.ShowDialog();
+           
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             MessageBox.Show("¿Estás seguro? No te conviene entrar aquí...");
-           // Application.Run(new ej3());
+            ej3 ejercicio3 = new ej3();
+            ejercicio3.ShowDialog();
         }
 
         private void button4_Click(object sender, EventArgs e)

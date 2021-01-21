@@ -78,11 +78,13 @@ namespace ud19
             if (checkBox1.Checked)
             {
                 espe += checkBox1.Text;
+                espe += ", ";
             }
 
             if (checkBox2.Checked)
             {
                 espe += checkBox2.Text;
+                espe += ", ";
             }
 
             if (checkBox3.Checked)
@@ -91,7 +93,11 @@ namespace ud19
             }
 
 
-            MessageBox.Show("El sistema operativo elegiso es "+so+ " \nLa especialidad escogida es " + espe + " \nhoras " + trackBar1.Value.ToString());
+            MessageBox.Show("El sistema operativo elegido es: "+so+ " \nLa especialidad escogida es: " + espe + " \nEl total de horas es: " + trackBar1.Value.ToString());
+
+            espe = "";
+            so = "";
+
         }
 
         private void ej3_Load(object sender, EventArgs e)
